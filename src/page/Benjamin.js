@@ -24,8 +24,11 @@ function Benjamin() {
         }, 1000);
         return () => clearInterval(reverse);
     }, []);
+
     return (
-        <div className='text-center font-bold'>{time}</div>
+        <>
+            <div className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[#d83546] text-6xl font-bold text-center'>{time}</div>
+        </>
     )
 }
 
